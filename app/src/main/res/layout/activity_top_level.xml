@@ -6,13 +6,27 @@
     android:layout_height="match_parent"
     tools:context="ua.sten.starbuzz.TopLevelActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/starbuzz_logo"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/starbuzz_logo"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <ListView
+        android:id="@+id/list_options"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        android:entries="@array/options"
+        android:layout_marginTop="8dp" />
 </android.support.constraint.ConstraintLayout>

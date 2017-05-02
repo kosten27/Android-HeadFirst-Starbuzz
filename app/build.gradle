@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "ua.sten.starbuzz"
+        applicationId "ua.sten.starbuzz_logo"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
